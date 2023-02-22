@@ -1,0 +1,48 @@
+/* $greyColor:grey;
+$whiteColor:#ffff;
+$redColor:red;
+$backgroundColor:aquamarine;
+
+$titleFont:Arial;
+$bodyFont:"Times New Roman",Times,serif;
+
+
+
+@mixin buttonStyle ($color,$fontSize) {
+    width: 200px;
+    height: 40px;
+    background-color: $color;
+    border: none;
+    border-radius: 8px;
+    color: $whiteColor;
+    font-size: $fontSize;
+
+  } */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+$ubuntu-font: "Open Sans", sans-serif;
+$bg: rgb(255, 255, 255);
+$bg2: rgb(0, 0, 0);
+$text: rgb(15, 15, 15);
+$text2: rgb(240, 240, 240);
+$primary: rgb(22, 210, 247);
+
+$spacing-sm: 8px;
+$spacing-md: 16;
+$spacing-lg: 32px;
+
+$header-height: 72px;
+
+$sm: 37.5em;
+$md: 48em;
+$lg: 64em;
+$xl: 75em;
+
+@mixin breakpoint($point) {
+  @if $point==md {
+    @media (min-width: $md) {
+      @content;
+    }
+  }
+}
